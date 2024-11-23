@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌销售数据分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">品牌销售数据分析报告</h1>
+        
+        <!-- 总体概览卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-lg font-semibold text-gray-700">SiS品牌总销售额 (2023)</h3>
+                <p class="text-2xl font-bold">￡34,184,000</p>
+                <p class="text-sm text-red-500">同比增长 +15.1%</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-lg font-semibold text-gray-700">PhD品牌总销售额 (2023)</h3>
+                <p class="text-2xl font-bold">￡28,487,000</p>
+                <p class="text-sm text-green-500">同比下降 -16.4%</p>
+            </div>
+        </div>
+
+        <!-- SiS品牌数据表 -->
+        <div class="bg-white rounded-lg shadow-lg mb-8">
+            <div class="px-6 py-4 bg-blue-50 border-b border-gray-200">
+                <h2 class="text-xl font-bold text-gray-800">SiS品牌销售明细</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">销售渠道</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">2023年(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">2022年(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">变化额(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">变化率(%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">线上直销</td>
+                            <td class="px-6 py-4 text-right">4,389</td>
+                            <td class="px-6 py-4 text-right">4,491</td>
+                            <td class="px-6 py-4 text-right text-green-500">-102</td>
+                            <td class="px-6 py-4 text-right text-green-500">-2.3%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">电商平台</td>
+                            <td class="px-6 py-4 text-right">6,632</td>
+                            <td class="px-6 py-4 text-right">5,620</td>
+                            <td class="px-6 py-4 text-right text-red-500">+1,012</td>
+                            <td class="px-6 py-4 text-right text-red-500">+18.0%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">中国市场</td>
+                            <td class="px-6 py-4 text-right">1,017</td>
+                            <td class="px-6 py-4 text-right">2,163</td>
+                            <td class="px-6 py-4 text-right text-green-500">-1,146</td>
+                            <td class="px-6 py-4 text-right text-green-500">-53.0%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">美国市场</td>
+                            <td class="px-6 py-4 text-right">2,129</td>
+                            <td class="px-6 py-4 text-right">-</td>
+                            <td class="px-6 py-4 text-right text-red-500">+2,129</td>
+                            <td class="px-6 py-4 text-right">N/A</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">线上总计</td>
+                            <td class="px-6 py-4 text-right font-medium">14,167</td>
+                            <td class="px-6 py-4 text-right font-medium">12,274</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+1,893</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+15.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">国际零售</td>
+                            <td class="px-6 py-4 text-right">7,547</td>
+                            <td class="px-6 py-4 text-right">6,237</td>
+                            <td class="px-6 py-4 text-right text-red-500">+1,310</td>
+                            <td class="px-6 py-4 text-right text-red-500">+21.0%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">英国零售</td>
+                            <td class="px-6 py-4 text-right">12,470</td>
+                            <td class="px-6 py-4 text-right">11,197</td>
+                            <td class="px-6 py-4 text-right text-red-500">+1,273</td>
+                            <td class="px-6 py-4 text-right text-red-500">+11.4%</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">零售总计</td>
+                            <td class="px-6 py-4 text-right font-medium">20,017</td>
+                            <td class="px-6 py-4 text-right font-medium">17,434</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+2,583</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+14.8%</td>
+                        </tr>
+                        <tr class="bg-blue-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-bold">SiS总计</td>
+                            <td class="px-6 py-4 text-right font-bold">34,184</td>
+                            <td class="px-6 py-4 text-right font-bold">29,708</td>
+                            <td class="px-6 py-4 text-right font-bold text-red-500">+4,476</td>
+                            <td class="px-6 py-4 text-right font-bold text-red-500">+15.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PhD品牌数据表 -->
+        <div class="bg-white rounded-lg shadow-lg">
+            <div class="px-6 py-4 bg-red-50 border-b border-gray-200">
+                <h2 class="text-xl font-bold text-gray-800">PhD品牌销售明细</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">销售渠道</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">2023年(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">2022年(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">变化额(千镑)</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">变化率(%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">线上直销</td>
+                            <td class="px-6 py-4 text-right">2,920</td>
+                            <td class="px-6 py-4 text-right">7,986</td>
+                            <td class="px-6 py-4 text-right text-green-500">-5,066</td>
+                            <td class="px-6 py-4 text-right text-green-500">-63.4%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">电商平台</td>
+                            <td class="px-6 py-4 text-right">6,421</td>
+                            <td class="px-6 py-4 text-right">8,430</td>
+                            <td class="px-6 py-4 text-right text-green-500">-2,009</td>
+                            <td class="px-6 py-4 text-right text-green-500">-23.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">中国市场</td>
+                            <td class="px-6 py-4 text-right">2,373</td>
+                            <td class="px-6 py-4 text-right">5,046</td>
+                            <td class="px-6 py-4 text-right text-green-500">-2,673</td>
+                            <td class="px-6 py-4 text-right text-green-500">-53.0%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">美国市场</td>
+                            <td class="px-6 py-4 text-right">1,419</td>
+                            <td class="px-6 py-4 text-right">-</td>
+                            <td class="px-6 py-4 text-right text-red-500">+1,419</td>
+                            <td class="px-6 py-4 text-right">N/A</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">线上总计</td>
+                            <td class="px-6 py-4 text-right font-medium">13,133</td>
+                            <td class="px-6 py-4 text-right font-medium">21,462</td>
+                            <td class="px-6 py-4 text-right font-medium text-green-500">-8,329</td>
+                            <td class="px-6 py-4 text-right font-medium text-green-500">-38.8%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">国际零售</td>
+                            <td class="px-6 py-4 text-right">5,032</td>
+                            <td class="px-6 py-4 text-right">4,158</td>
+                            <td class="px-6 py-4 text-right text-red-500">+874</td>
+                            <td class="px-6 py-4 text-right text-red-500">+21.0%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">英国零售</td>
+                            <td class="px-6 py-4 text-right">10,322</td>
+                            <td class="px-6 py-4 text-right">8,445</td>
+                            <td class="px-6 py-4 text-right text-red-500">+1,877</td>
+                            <td class="px-6 py-4 text-right text-red-500">+22.2%</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap font-medium">零售总计</td>
+                            <td class="px-6 py-4 text-right font-medium">15,354</td>
+                            <td class="px-6 py-4 text-right font-medium">12,603</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+2,751</td>
+                            <td class="px-6 py-4 text-right font-medium text-red-500">+21.8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
